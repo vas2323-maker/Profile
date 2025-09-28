@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUycXo5MTM2cTdiNHZibjVjaGcyNWNxNzN2eDhybGg3NGpucW1reHo4NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/argDpg3qYUxVK/giphy.gif') no-repeat center center;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+    }
+    .card {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      border-radius: 20px;
+      width: 320px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    }
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
+      margin-bottom: 15px;
+    }
+    h1 {
+      font-size: 26px;
+      margin: 10px 0;
+    }
+    p {
+      font-size: 15px;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: block;
+      margin: 10px auto;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s;
+      width: fit-content;
+    }
+    .spotify-btn {
+      background: #1DB954;
+      color: white;
+    }
+    .spotify-btn:hover {
+      background: #1ed760;
+    }
+    .ps-btn {
+      background: #004098;
+      color: white;
+    }
+    .ps-btn:hover {
+      background: #0066cc;
+    }
+    /* vidéo cachée */
+    .hidden-audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="E8B03557-167C-49ED-B913-82CB482732FA.jpeg" alt="Photo de profil" class="profile-pic">
+    <h1>1sacrifice</h1>
+    <p>soul eater masochist and poetry propaganda</p>
+    <a href="https://open.spotify.com/user/31mcao5kfae7ompre3lqmfwcc2xe?si=sHUTs4_LT2e62P8BrhwKrA" target="_blank" class="btn spotify-btn">🎵 Mon Spotify</a>
+    <a href="https://profile.playstation.com/nueve_ct" target="_blank" class="btn ps-btn">🎮 Mon PlayStation</a>
+  </div>
+
+  <!-- Musique en fond via vidéo cachée -->
+  <video class="hidden-audio" autoplay loop>
+    <source src="https://files.catbox.moe/iy9d96.mov" type="video/mp4">
+  </video>
+</body>
+</html>
